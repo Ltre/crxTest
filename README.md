@@ -23,3 +23,11 @@ https://developer.chrome.com/extensions/tut_debugging
 
 Content Scripts:
 https://developer.chrome.com/extensions/content_scripts
+
+
+某截屏：
+https://github.com/xianglgd/imgCut
+http://www.pin5i.com/showtopic-22149.html
+
+某不沾边的截屏源码，利用canvas（看起来只能以元素为单位，而非指定视觉位置截图）：
+https://github.com/niklasvh/html2canvas
