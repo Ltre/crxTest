@@ -20,3 +20,6 @@ https://developer.chrome.com/extensions/devguide
 
 chrome Debugging Tutorial:
 https://developer.chrome.com/extensions/tut_debugging
+
+Content Scripts:
+https://developer.chrome.com/extensions/content_scripts
