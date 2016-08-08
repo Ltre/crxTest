@@ -1,1 +1,58 @@
-function loadJquery(win, onload){    if (win.jQuery) {	    var doc = win.document;		var je = doc.createElement("script"); 		je.setAttribute("type", "text/javascript"); 		je.setAttribute("src", "//cdn.bootcss.com/jquery/2.1.4/jquery.min.js");		var heads = doc.getElementsByTagName("head"); 		if (heads.length) {			heads[0].appendChild(je);		} else {			doc.documentElement.appendChild(je);		}    }	var iv = setInterval(function(){        win.jQuery && ! function(){            clearInterval(iv);            if ('function' == typeof onload) {                win.jQuery(function(){                    onload(win.jQuery);                });            }        }();    }, 10);}/* new function(){    var doc = win.document;    var je = doc.createElement("script");     je.setAttribute("type", "text/javascript");     je.setAttribute("src", "//cdn.bootcss.com/html2canvas/0.4.1/html2canvas.min.js");    var heads = doc.getElementsByTagName("head");     if (heads.length) {        heads[0].appendChild(je);    } else {        doc.documentElement.appendChild(je);    }}; *//** * @todo ²âÊÔ×Ô¶¯Æ¥Åä½ØÆÁÇøÓò */loadJquery(window, function($){    if (location.href.match(/^(https?:\/\/)?(www\.)?bilibili.com\/.*/i)) {        var areaz = $('#bofqi');        var t1 = areaz[0].offsetTop + parseInt(areaz.css('height').replace('px', '')) - 70;//ÉÏtop        var t2 = areaz[0].offsetTop + parseInt(areaz.css('height').replace('px', '')) - 40;//ÏÂtop        var l1 = areaz[0].offsetLeft;//×óleft        var l2 = areaz[0].offsetLeft + parseInt(areaz.css('left').replace('px', '')) - 40;//ÓÒleft        console.log([t1, t2, l1, l2]);//fuck        console.log({width:areaz.css('width')});        console.log({height:areaz.css('height')});        console.log({offsetLeft:areaz[0].offsetLeft});        console.log({offsetTop:areaz[0].offsetTop});        //¿ªÊ¼½ØÍ¼¹ı³Ì£¬Ö±½ÓÀûÓÃcanvas»­Í¼£¨²Â²â£©    }});
+function loadJquery(win, onload){
+    if (win.jQuery) {
+	    var doc = win.document;
+		var je = doc.createElement("script"); 
+		je.setAttribute("type", "text/javascript"); 
+		je.setAttribute("src", "//cdn.bootcss.com/jquery/2.1.4/jquery.min.js");
+		var heads = doc.getElementsByTagName("head"); 
+		if (heads.length) {
+			heads[0].appendChild(je);
+		} else {
+			doc.documentElement.appendChild(je);
+		}
+    }
+	var iv = setInterval(function(){
+        win.jQuery && ! function(){
+            clearInterval(iv);
+            if ('function' == typeof onload) {
+                win.jQuery(function(){
+                    onload(win.jQuery);
+                });
+            }
+        }();
+    }, 10);
+}
+
+
+/* new function(){
+    var doc = win.document;
+    var je = doc.createElement("script"); 
+    je.setAttribute("type", "text/javascript"); 
+    je.setAttribute("src", "//cdn.bootcss.com/html2canvas/0.4.1/html2canvas.min.js");
+    var heads = doc.getElementsByTagName("head"); 
+    if (heads.length) {
+        heads[0].appendChild(je);
+    } else {
+        doc.documentElement.appendChild(je);
+    }
+}; */
+
+
+/**
+ * @todo æµ‹è¯•è‡ªåŠ¨åŒ¹é…æˆªå±åŒºåŸŸ
+ */
+loadJquery(window, function($){
+    if (location.href.match(/^(https?:\/\/)?(www\.)?bilibili.com\/.*/i)) {
+        var areaz = $('#bofqi');
+        var t1 = areaz[0].offsetTop + parseInt(areaz.css('height').replace('px', '')) - 70;//ä¸Štop
+        var t2 = areaz[0].offsetTop + parseInt(areaz.css('height').replace('px', '')) - 40;//ä¸‹top
+        var l1 = areaz[0].offsetLeft;//å·¦left
+        var l2 = areaz[0].offsetLeft + parseInt(areaz.css('left').replace('px', '')) - 40;//å³left
+        console.log([t1, t2, l1, l2]);//fuck
+        console.log({width:areaz.css('width')});
+        console.log({height:areaz.css('height')});
+        console.log({offsetLeft:areaz[0].offsetLeft});
+        console.log({offsetTop:areaz[0].offsetTop});
+        //å¼€å§‹æˆªå›¾è¿‡ç¨‹ï¼Œç›´æ¥åˆ©ç”¨canvasç”»å›¾ï¼ˆçŒœæµ‹ï¼‰
+    }
+});
