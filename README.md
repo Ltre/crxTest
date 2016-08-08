@@ -2,6 +2,7 @@
 Test for chrome extension
 
 https://developer.chrome.com/extensions/getstarted
+https://crxdoc-zh.appspot.com/extensions/getstarted
 
 https://developer.chrome.com/extensions/manifest
 
@@ -11,12 +12,14 @@ http://www.cnblogs.com/guogangj/p/3235703.html#t9-1
 
 Chrome Extension Overview:
 https://developer.chrome.com/extensions/overview
+https://crxdoc-zh.appspot.com/extensions/overview
 
 chrome api:
 https://developer.chrome.com/extensions/api_index
 
 chrome Developer's Guide:
 https://developer.chrome.com/extensions/devguide
+https://crxdoc-zh.appspot.com/extensions/devguide
 
 chrome Debugging Tutorial:
 https://developer.chrome.com/extensions/tut_debugging
