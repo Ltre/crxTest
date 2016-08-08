@@ -29,6 +29,15 @@ https://developer.chrome.com/extensions/content_scripts
 http://www.bilibili.com/video/av5671447/?tg
 
 
+html2canvas官网:
+https://html2canvas.hertzen.com/
+
+html2canvas源码：
+https://github.com/niklasvh/html2canvas
+
+使用 JavaScript 截屏 - 小胡子哥博客:
+http://www.barretlee.com/blog/2015/09/24/screenshot-with-javascript/
+
 某截屏：
 https://github.com/xianglgd/imgCut
 http://www.pin5i.com/showtopic-22149.html
