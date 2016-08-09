@@ -27,6 +27,8 @@ https://developer.chrome.com/extensions/tut_debugging
 Content Scripts:
 https://developer.chrome.com/extensions/content_scripts
 
+通信：
+https://crxdoc-zh.appspot.com/extensions/messaging
 
 测试作用页面：
 http://www.bilibili.com/video/av5671447/?tg
